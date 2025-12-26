@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
+  --font-poppins: var(--font-poppins);
+  --font-dosis: var(--font-dosis);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-hack-bg: var(--hack-bg);
+  --color-linear-grey: var(--linear-grey);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: rgb(17, 17, 17);
+  --hack-bg: #020e1828;
+  --linear-grey: #cbc9e2;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif;
+  background-color: var(--background);
+  color: #ededed;
+}
+
+body::-webkit-scrollbar {
+  width: 0rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+canvas {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+@keyframes slime {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
