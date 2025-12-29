@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <About />
-      {/* <Caption /> */}
+      <Caption />
       {/* <Experience /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
