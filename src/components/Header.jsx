@@ -121,7 +121,7 @@ export default function Header() {
           <div className="absolute z-[20] h-[280px] md:h-[320px] lg:h-[380px] w-full">
             <div
               role="img"
-              aria-label="Pariola's Picture"
+              aria-label="Xeylous's Picture"
               className="w-full h-full block bg-cover bg-center"
               style={{ backgroundImage: "url('https://ik.imagekit.io/xeylous/Profile%20pic.png')" }}
             />
