@@ -101,21 +101,18 @@ export default function Header() {
             </div>
 
             <p className="m-0 mt-[0.7rem] text-[var(--linear-grey)] font-medium leading-[1.8] w-full lg:w-full pl-0 lg:pl-0 md:text-center lg:text-left">
-              I like to craft solid and scalable frontend products with great user
-              experiences.
+              I build end-to-end digital products that are scalable, reliable and crafted with strong attraction to user exprience.
             </p>
           </div>
 
           <div className="w-full lg:w-max h-fit flex items-start md:items-center md:justify-center lg:items-center lg:justify-between mb-8 lg:mb-[1.2rem] mt-[40px] lg:mt-[90px] gap-x-[30px] lg:gap-x-[50px] pl-0 lg:pl-0">
              {/* Using max-w-[50%] for mobile as per original SCSS logic roughly */}
             <p className="max-w-[40%] md:max-w-[45%] lg:max-w-[220px] h-fit leading-[1.5] text-[0.6em] md:text-[0.8em] lg:text-[0.9em] md:text-center lg:text-left">
-              Highly skilled at progressive enhancement, design systems &amp; UI
-              Engineering.
+             I create real world products with clean, scalable code.
             </p>
 
             <p className="max-w-[50%] md:max-w-[45%] lg:max-w-[220px] h-fit leading-[1.5] text-[0.6em] md:text-[0.8em] lg:text-[0.9em] md:text-center lg:text-left">
-              Over a three years of experience building products for clients across
-              africa.
+              Focused on performance and long-term maintainability.
             </p>
           </div>
         </div>
@@ -126,7 +123,7 @@ export default function Header() {
               role="img"
               aria-label="Pariola's Picture"
               className="w-full h-full block bg-cover bg-center"
-              style={{ backgroundImage: "url('https://ik.imagekit.io/9ghb9cknpe/pariola_dp_sqr?updatedAt=1722351979096')" }}
+              style={{ backgroundImage: "url('https://ik.imagekit.io/xeylous/Profile%20pic.png')" }}
             />
           </div>
           <span className="absolute border-2 border-[var(--linear-grey)] bg-transparent opacity-60 w-[90%] h-[300px] md:h-[330px] top-0 lg:h-[350px] lg:bottom-0 lg:top-auto"></span>
