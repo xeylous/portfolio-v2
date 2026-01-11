@@ -10,7 +10,7 @@ export default function About() {
         style={{ backgroundImage: "url('https://raw.githubusercontent.com/adeolaadeoti/adeolaadeoti-v2/main/public/webp/hand-left.webp')" }}
       /> */}
 
-      <div className="w-full max-w-[1100px] h-fit flex items-center justify-between flex-col md:flex-row z-[1] w-[85%] px-0">
+      <div className="w-full max-w-[1100px] h-fit flex items-center justify-between flex-col md:flex-row z-[1] px-8 md:w-[85%] md:px-0">
         <article className="max-w-[460px] h-auto text-[1.07em] block text-left mb-[35px] md:mb-0">
           <h1 className="text-[2.5em] md:text-[3.5em] font-black tracking-[-0.03em] text-transparent max-w-none md:max-w-[30vw] leading-[1.5] [-webkit-text-stroke:1px_var(--linear-grey)]">
             Design

@@ -39,7 +39,7 @@ export default function Header() {
     >
       {/* Merged Navbar Content */}
       <nav className="absolute top-0 left-0 w-full z-50 flex justify-center pt-4 md:pt-14">
-        <div className="w-full max-w-[1100px] flex justify-between md:w-[85%] px-12 md:px-0">
+        <div className="w-full max-w-[1100px] flex justify-between md:w-[85%] px-8 md:px-0">
           <div className="text-xl font-normal">Xeylous</div>
           <div className="text-sm font-normal flex items-center gap-6">
             <a 
