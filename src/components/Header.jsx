@@ -41,9 +41,16 @@ export default function Header() {
       <nav className="absolute top-0 left-0 w-full z-50 flex justify-center pt-4 md:pt-14">
         <div className="w-full max-w-[1100px] flex justify-between md:w-[85%] px-12 md:px-0">
           <div className="text-xl font-normal">Xeylous</div>
-          <div className="text-sm font-normal flex items-center gap-2 cursor-pointer">
-            <span>🚧</span>
-            <span className="opacity-80 hover:opacity-100 transition-opacity">What&apos;s New?</span>
+          <div className="text-sm font-normal flex items-center gap-6">
+            <a 
+              href="https://resume.xeylous.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex items-center justify-center font-medium text-[var(--linear-grey)] transition-colors duration-300 ease-out hover:text-white"
+            >
+              Resume
+              <div className="absolute w-full h-[2px] bg-[var(--linear-grey)] left-0 -bottom-[2px] scale-x-0 origin-bottom-right transition-transform duration-250 ease-out group-hover:scale-x-100 group-hover:origin-bottom-left" />
+            </a>
           </div>
         </div>
       </nav>
