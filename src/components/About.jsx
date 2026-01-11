@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className="w-full h-fit bg-[var(--hack-bg)] relative grid place-items-center overflow-hidden py-32 md:py-10 sm:py-0">
+    <section className="w-full h-fit bg-[var(--hack-bg)] relative grid place-items-center overflow-hidden py-4 md:py-16 ">
       {/* Hand Image (Before element replacement) */}
       {/* <div 
         className="hidden md:block absolute bottom-[0rem] left-[-80px] w-[26rem] h-[26rem] bg-no-repeat bg-contain scale-[0.6] pointer-events-none"
