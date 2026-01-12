@@ -1,40 +1,95 @@
 'use client';
-import React from 'react';
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Experience() {
+  const containerRef = useRef(null);
+  
+  const experiences = [
+    {
+      role: "Agentic AI Research Intern",
+      company: "CodeApto",
+      period: "Aug 2025 - Present",
+      description: [
+        "Researching and developing agentic AI systems capable of autonomous reasoning and planning.",
+        "Explored multi-agent frameworks and LLM orchestration for real-world problem-solving.",
+        "Worked on integrating AI agents with external tools, APIs, and memory for task automation."
+      ]
+    },
+    {
+      role: "Software Developer Intern",
+      company: "CodeApto",
+      period: "Jul 2024 - Feb 2025",
+      description: [
+        "Developed full-stack applications using the MERN Stack.",
+        "Built and optimized scalable APIs and responsive frontends.",
+        "Collaborated in an agile team environment and improved backend performance."
+      ]
+    }
+  ];
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+      }
+    });
+
+    tl.fromTo(".experience-title", 
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+    )
+    .fromTo(".experience-card",
+      { opacity: 0, x: -50 },
+      { opacity: 1, x: 0, duration: 0.8, stagger: 0.2, ease: "power3.out" },
+      "-=0.4"
+    );
+  }, { scope: containerRef });
+
   return (
-    <section className="h-fit w-full bg-[var(--hack-bg)] grid place-items-center">
-      <div className="h-auto w-full flex items-center justify-center bg-[rgb(22,22,26)] py-[100px] md:py-[50px]">
-        <article className="w-full h-auto text-center flex items-center flex-col max-w-[800px] md:w-[85%]">
-          <h1 className="m-0 text-[3.6em] font-black leading-[1.3] -tracking-[0.03em] block mb-8 md:max-w-[100vw] md:text-[2.5rem] md:mb-[1.8rem]">
-            Over the years,
-          </h1>
+    <section ref={containerRef} className="h-fit w-full bg-[var(--hack-bg)] grid place-items-center py-[100px] md:py-[50px]">
+      <div className="w-full max-w-[1200px] px-4 md:px-8">
+        <h1 className="experience-title m-0 text-[3.6em] font-black leading-[1.3] -tracking-[0.03em] mb-12 text-center md:text-[2.5rem] md:mb-8 text-[#ededed]">
+          Over the years,
+        </h1>
 
-          <p className="w-full text-[var(--linear-grey)] text-[1em] leading-[2] block mt-0 max-w-[640px] mb-[1em] md:w-full">
-            (~_^)
-          </p>
-
-          <p className="w-full text-[var(--linear-grey)] text-[1em] leading-[2] block mt-0 max-w-[640px] mb-[1em] md:w-full">
-            For me, engineering is an extension of the design process. I
-            specialize in bridging the gap between static visuals and living,
-            breathing interfaces. My experience spans Fintech, HealthTech, and
-            EdTech. I&apos;ve architected complex SaaS solutions (including
-            remote collaboration tools) and collaborated with MakerStudio to
-            ship polished products for giants like Nomba and Paystack.
-          </p>
-
-          <p className="w-full text-[var(--linear-grey)] text-[1em] leading-[2] block mt-0 max-w-[640px] mb-[1em] md:w-full">
-            I also understand scale, whether driving optimization as a Growth
-            Frontend Engineer at Diool or managing high-traffic infrastructure
-            for startups like Meto. Previously, I set the technical culture as
-            the Founding Frontend Engineer at Klas.
-            <br />
-            <br />
-            I&apos;m currently exploring Design Engineering opportunities that
-            challenge me to use my design thinking and creative skills to
-            define, not just build, the next generation of digital products.
-          </p>
-        </article>
+        <div className="flex flex-col gap-8 md:gap-6 w-full max-w-[900px] mx-auto">
+          {experiences.map((exp, index) => (
+            <div 
+              key={index} 
+              className="experience-card bg-[var(--background)] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#ffffff30] transition-colors duration-300 md:p-6"
+            >
+              <div className="flex justify-between items-start mb-4 md:flex-col md:gap-2">
+                <div>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-[#fff] to-[var(--linear-grey)] bg-clip-text text-transparent md:text-xl">
+                    {exp.role}
+                  </h3>
+                  <p className="text-[var(--linear-grey)] text-lg font-medium md:text-base">
+                    {exp.company}
+                  </p>
+                </div>
+                <span className="px-4 py-1 rounded-full bg-[#ffffff05] text-sm text-[var(--linear-grey)] border border-[#ffffff10] whitespace-nowrap">
+                  {exp.period}
+                </span>
+              </div>
+              
+              <ul className="list-disc pl-5 space-y-2 md:space-y-1">
+                {exp.description.map((item, i) => (
+                  <li key={i} className="text-[#a0a0a0] leading-relaxed text-base md:text-sm pl-2">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

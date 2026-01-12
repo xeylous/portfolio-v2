@@ -37,13 +37,13 @@ export const metadata = {
   openGraph: {
     type: "website",
     siteName: "Apurv",
-    description: "I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.",
+    description: "I enjoy creating end-to-end solutions with solid foundations, scalability, and excellent user experiences.",
     title: {
-      default: "Pariola | Creative Frontend Engineer",
-      template: "%s • Pariola | Creative Frontend Engineer",
+      default: "Apurv | Creative Full Stack Engineer",
+      template: "%s • Apurv | Creative Full Stack Engineer",
     },
     images: [{ url: "https://pariola.dev/meta/meta-pariola.jpg" }],
-    url: "https://pariola.dev",
+    url: "https://apurv.xyz",
   },
   twitter: {
     card: "summary_large_image",
@@ -53,13 +53,13 @@ export const metadata = {
       template: "%s • Pariola | Creative Frontend Engineer",
     },
     description: "I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.",
-    images: ["https://pariola.dev/meta/meta-pariola.jpg"],
+    images: ["https://ik.imagekit.io/xeylous/Profile%20pic.png"],
   },
   icons: {
     icon: "/favicon.svg",
   },
   alternates: {
-    canonical: "https://pariola.dev",
+    canonical: "https://apurv.xyz",
   },
 };
 
