@@ -26,8 +26,7 @@ export const metadata = {
     follow: true,
   },
   keywords: [
-    "Omopariola Kehinde Philip", "xeylous.xyz", "Apurv", "Portfolio", "Creative Full Stack Developer",
-    "Kehinde", "Kehinde Omopariola", "Omopariola", "Apurv Kehinde", "Apurv Philip",
+    "xeylous.xyz", "Apurv", "Portfolio", "Creative Full Stack Developer",
     "Frontend Developer", "Software Engineer", "Web Developer", "JavaScript Developer",
     "React Developer", "Next.js Developer", "Apurv Frontend Developer",
     "Apurv Software Engineer", "Apurv Web Developer", "Apurv JavaScript Developer",
@@ -42,15 +41,15 @@ export const metadata = {
       default: "Apurv | Creative Full Stack Engineer",
       template: "%s • Apurv | Creative Full Stack Engineer",
     },
-    images: [{ url: "https://pariola.dev/meta/meta-pariola.jpg" }],
+    images: [{ url: "https://ik.imagekit.io/xeylous/Profile%20pic.png" }],
     url: "https://apurv.xyz",
   },
   twitter: {
     card: "summary_large_image",
     site: "@ipariola",
     title: {
-      default: "Pariola | Creative Frontend Engineer",
-      template: "%s • Pariola | Creative Frontend Engineer",
+      default: "Apurv | Creative Full Stack Engineer",
+      template: "%s • Apurv | Creative Full Stack Engineer",
     },
     description: "I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.",
     images: ["https://ik.imagekit.io/xeylous/Profile%20pic.png"],
