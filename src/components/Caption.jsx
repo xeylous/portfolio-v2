@@ -44,7 +44,7 @@ export default function Caption() {
             <p className="translate-z-0 w-unset leading-[1.2] text-[1.2em] tracking-[0.02em] max-w-[701px] block my-[1em] mx-0 font-medium text-[var(--linear-grey)] md:text-[1.4em]">
               About design,
               <br />
-              frontend dev,
+              Development,
               <br />
               learning and life.
             </p>
