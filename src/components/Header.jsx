@@ -45,7 +45,7 @@ export default function Header() {
             <a 
               href="https://resume.xeylous.xyz"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="xeylous resume"
               className="group relative flex items-center justify-center font-medium text-[var(--linear-grey)] transition-colors duration-300 ease-out hover:text-white"
             >
               Resume

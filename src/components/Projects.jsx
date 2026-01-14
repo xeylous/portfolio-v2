@@ -81,7 +81,7 @@ export default function Projects() {
               <a
                 href={project.url}
                 target="_blank"
-                rel="noreferrer noopener"
+                rel="xeylous project"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--linear-grey)] uppercase tracking-widest font-[family-name:var(--font-dosis)] group-hover:text-white transition-colors duration-300"
               >
                 <div className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">

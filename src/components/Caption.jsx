@@ -53,7 +53,7 @@ export default function Caption() {
           <a
             href="https://blog.xeylous.xyz"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="xeylous.xyz"
             className="group relative font-bold uppercase tracking-[0.1em] text-[80%] select-none inline-flex overflow-hidden bg-transparent whitespace-nowrap items-center justify-center p-[1.2em_1em] text-[#cbc9e2] border border-[#cbc9e2] min-w-[18em] hover:text-white hover:z-[1] md:py-[1.6em] md:px-[3em] md:text-[var(--linear-grey)] md:border-[var(--linear-grey)] md:min-w-[23.222em] md:text-[0.8em]"
           >
             read my articles
