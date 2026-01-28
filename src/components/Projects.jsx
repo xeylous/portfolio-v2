@@ -26,19 +26,27 @@ export default function Projects() {
       url: "https://elevate-v2.vercel.app/"
     },
     {
-      id: 3,
-      name: "CrypTransfer",
-      tags: "Web3 / DeFi / Ethereum",
-      description: "Decentralized dApp for secure ERC-20 token and ETH transfers. Ensures trustless, transparent, and gas-optimized transactions.",
-      url: "https://cryp-transfer.vercel.app/"
-    },
-    {
       id: 4,
+      name: "Testispace",
+      tags: "Nextjs / Node.js / MongoDB",
+      description: "TestiSpace is a futuristic, all-in-one SaaS platform for collecting and embedding video & text testimonials. Features a Space aesthetic, one-line embeddable widgets, and seamless media management. Built with Next.js 14, TypeScript, and MongoDB",
+      url: "https://testispace.vercel.app/"
+    },
+     {
+      id: 5,
       name: "Telaiya Tourism",
       tags: "Tourism / React / Design",
       description: "Tourism website promoting Telaiya Dam. Showcases destinations and activities with a visually appealing responsive design.",
       url: "https://telaiya-tourism.vercel.app/"
+    },
+    {
+      id: 6,
+      name: "CrypTransfer",
+      tags: "Web3 / DeFi / Ethereum",
+      description: "Decentralized dApp for secure ERC-20 token and ETH transfers. Ensures trustless, transparent, and gas-optimized transactions.",
+      url: "https://cryp-transfer.vercel.app/"
     }
+   
   ];
 
   useGSAP(() => {
