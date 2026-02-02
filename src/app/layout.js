@@ -41,18 +41,18 @@ export const metadata = {
       default: "Apurv | Creative Full Stack Engineer",
       template: "%s • Apurv | Creative Full Stack Engineer",
     },
-    images: [{ url: "https://ik.imagekit.io/xeylous/Profile%20pic.png" }],
+    images: [{ url: "https://ik.imagekit.io/xeylous/Gemini_Generated_Image_3vsqck3vsqck3vsq.png" }],
     url: "https://apurv.xyz",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ipariola",
+    site: "@xeylous",
     title: {
       default: "Apurv | Creative Full Stack Engineer",
       template: "%s • Apurv | Creative Full Stack Engineer",
     },
-    description: "I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.",
-    images: ["https://ik.imagekit.io/xeylous/Profile%20pic.png"],
+    description: "I enjoy creating End-to-end solutions with solid foundations, scalability, and excellent user experiences.",
+    images: ["https://ik.imagekit.io/xeylous/Gemini_Generated_Image_3vsqck3vsqck3vsq.png"],
   },
   icons: {
     icon: "/favicon.svg",
