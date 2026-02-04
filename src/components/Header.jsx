@@ -124,8 +124,8 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="h-[280px] w-[300px] md:h-[340px] md:w-[360px] lg:h-[400px] lg:w-[400px] relative flex items-center flex-col my-16 lg:my-0 mx-auto ">
-          <div className="absolute z-[20] h-[280px] md:h-[320px] lg:h-[380px] w-full">
+        <div className="h-[200px] w-[220px] xs:h-[240px] xs:w-[260px] sm:h-[280px] sm:w-[300px] md:h-[340px] md:w-[360px] lg:h-[400px] lg:w-[400px] relative flex items-center flex-col my-10 sm:my-16 lg:my-0 mx-auto">
+          <div className="absolute z-[20] h-[200px] xs:h-[240px] sm:h-[280px] md:h-[320px] lg:h-[380px] w-full">
             <div
               role="img"
               aria-label="Xeylous's Picture"
@@ -133,7 +133,7 @@ export default function Header() {
               style={{ backgroundImage: "url('https://ik.imagekit.io/xeylous/Profile%20pic.png')" }}
             />
           </div>
-          <span className="absolute border-2 border-[var(--linear-grey)] bg-transparent opacity-60 w-[90%] h-[300px] md:h-[330px] top-0 lg:h-[350px] lg:bottom-0 lg:top-auto"></span>
+          <span className="absolute border-2 border-[var(--linear-grey)] bg-transparent opacity-60 w-[90%] h-[220px] xs:h-[260px] sm:h-[300px] md:h-[330px] top-0 lg:h-[350px] lg:bottom-0 lg:top-auto"></span>
         </div>
       </div>
     </header>
