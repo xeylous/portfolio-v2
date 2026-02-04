@@ -26,18 +26,25 @@ export default function Projects() {
       url: "https://elevate-v2.vercel.app/"
     },
     {
-      id: 4,
+      id: 3,
       name: "Testispace",
       tags: "Nextjs / Node.js / MongoDB",
       description: "TestiSpace is a futuristic, all-in-one SaaS platform for collecting and embedding video & text testimonials. Features a Space aesthetic, one-line embeddable widgets, and seamless media management. Built with Next.js 14, TypeScript, and MongoDB",
       url: "https://testispace.vercel.app/"
     },
+    {
+     id: 4,
+     name: "Telaiya Tourism",
+     tags: "Tourism / React / Design",
+     description: "Tourism website promoting Telaiya Dam. Showcases destinations and activities with a visually appealing responsive design.",
+     url: "https://telaiya-tourism.vercel.app/"
+   },
      {
       id: 5,
-      name: "Telaiya Tourism",
-      tags: "Tourism / React / Design",
-      description: "Tourism website promoting Telaiya Dam. Showcases destinations and activities with a visually appealing responsive design.",
-      url: "https://telaiya-tourism.vercel.app/"
+      name: "EtherList",
+      tags: "React / Solidity / Metamask",
+      description: "Etherlist is a decentralized to-do app powered by Ethereum. Your tasks are securely stored on the blockchain, ensuring transparency and ownership. Connect your wallet, add tasks, and track your progress — all without a centralized server.",
+      url: "https://etherlist-five.vercel.app/"
     },
     {
       id: 6,
@@ -66,31 +73,31 @@ export default function Projects() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-[100px] w-full grid place-items-center bg-[var(--hack-bg)] h-fit md:py-[50px]" id="projects">
-      <div className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8">
+    <section ref={containerRef} className="py-[60px] sm:py-[80px] md:py-[100px] w-full grid place-items-center bg-[var(--hack-bg)] h-fit" id="projects">
+      <div className="w-full max-w-[90%] sm:max-w-[85%] md:max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 px-0 sm:px-4 md:px-8">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="project-card w-full min-h-[300px] p-8 md:p-6 bg-[rgb(22,22,26)] flex flex-col justify-between relative group rounded-2xl border border-[#ffffff10] hover:border-[#ffffff30] transition-colors duration-300"
+            className="project-card w-full min-h-[280px] sm:min-h-[300px] p-5 sm:p-6 md:p-8 bg-[rgb(22,22,26)] flex flex-col justify-between relative group rounded-2xl border border-[#ffffff10] hover:border-[#ffffff30] transition-colors duration-300"
           >
-            <div className="flex flex-col gap-4">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-[#fff] to-[var(--linear-grey)] bg-clip-text text-transparent capitalize leading-tight font-[family-name:var(--font-dosis)]">
+            <div className="flex flex-col gap-3 sm:gap-4 text-center sm:text-left">
+              <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#fff] to-[var(--linear-grey)] bg-clip-text text-transparent capitalize leading-tight font-[family-name:var(--font-dosis)]">
                 {project.name}
               </h3>
-              <small className="text-xs font-semibold tracking-wider text-[var(--linear-grey)] uppercase opacity-80">
+              <small className="text-[10px] sm:text-xs font-semibold tracking-wider text-[var(--linear-grey)] uppercase opacity-80">
                 {project.tags}
               </small>
-              <p className="text-[var(--linear-grey)] text-sm leading-relaxed font-[family-name:var(--font-poppins)] opacity-90">
+              <p className="text-[var(--linear-grey)] text-xs sm:text-sm leading-relaxed font-[family-name:var(--font-poppins)] opacity-90">
                 {project.description}
               </p>
             </div>
 
-            <div className="w-full mt-6 pt-6 border-t border-[#ffffff10]">
+            <div className="w-full mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-[#ffffff10] flex justify-center sm:justify-start">
               <a
                 href={project.url}
                 target="_blank"
                 rel="xeylous project"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--linear-grey)] uppercase tracking-widest font-[family-name:var(--font-dosis)] group-hover:text-white transition-colors duration-300"
+                className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[var(--linear-grey)] uppercase tracking-widest font-[family-name:var(--font-dosis)] group-hover:text-white transition-colors duration-300"
               >
                 <div className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
                  <IconArrowUp />

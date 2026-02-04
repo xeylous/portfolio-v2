@@ -56,52 +56,48 @@ export default function Contact() {
   );
 
   return (
-    <section className="w-full h-fit flex flex-col items-center py-[100px] bg-[var(--hack-bg)] md:py-[50px]" id="contact">
-      <div className="w-full max-w-[1100px] h-fit flex items-center flex-col md:max-w-[85%] mb-16 md:mb-10">
-        <small className="text-[1.2rem] text-[var(--linear-grey)] mb-5 max-w-[500px] leading-[1.8] text-center md:text-[1rem] md:mb-[30px] sm:text-[0.9rem] sm:max-w-[350px] sm:mb-10">
-          I can help you design, improve or build the product experience for
-          your new or existing products. Feel free to get in touch with me.
+    <section className="w-full h-fit flex flex-col items-center py-[60px] sm:py-[80px] md:py-[100px] bg-[var(--hack-bg)]" id="contact">
+      <div className="w-full max-w-[90%] sm:max-w-[85%] md:max-w-[1100px] h-fit flex items-center flex-col mb-10 sm:mb-12 md:mb-16">
+        <small className="text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] text-[var(--linear-grey)] mb-5 max-w-[600px] leading-[1.6] text-center">
+          Got an idea? Let's build something great together.
         </small>
-        <h1 className="text-[80px] font-bold leading-[2] capitalize font-[family-name:var(--font-dosis)] text-center md:text-[60px] md:leading-[1.2] text-[#ededed]">
-          Do you have any Ideas?
-        </h1>
       </div>
 
-      <div className="w-full max-w-[1200px] grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-8">
+      <div className="w-full max-w-[90%] sm:max-w-[85%] md:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-0 sm:px-4 md:px-8">
         
-        {/* Left Card: Contact Info */}
-        <div className="w-full h-full flex flex-col justify-between bg-[rgb(22,22,26)] p-10 rounded-2xl border border-[#ffffff10] md:p-6 md:gap-8">
+        {/* Left Card: Contact Info (hidden on small + tablet, visible on large+) */}
+        <div className=" lg:flex w-full h-full flex-col justify-between bg-[rgb(22,22,26)] p-6 sm:p-8 md:p-10 rounded-2xl border border-[#ffffff10] gap-8">
           <div>
-            <h1 className="text-4xl font-bold font-[family-name:var(--font-dosis)] mb-6 text-white">Let's Connect</h1>
-            <p className="text-[var(--linear-grey)] text-lg leading-relaxed mb-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-[family-name:var(--font-dosis)] mb-4 sm:mb-6 text-white">Let's Connect</h1>
+            <p className="text-[var(--linear-grey)] text-base sm:text-lg leading-relaxed mb-8 sm:mb-12">
               I'm passionate about creating digital experiences that make a difference. Reach out via email, phone, or socials.
             </p>
 
-            <div className="flex flex-col gap-6">
-              <a href="mailto:xeylous@gmail.com" className="flex items-center gap-4 text-[var(--linear-grey)] hover:text-white transition-colors group">
-                <div className="w-6 h-6 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+            <div className="flex flex-col gap-4 sm:gap-6">
+              <a href="mailto:xeylous@gmail.com" className="flex items-center gap-3 sm:gap-4 text-[var(--linear-grey)] hover:text-white transition-colors group">
+                <div className="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
                     <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                     <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                   </svg>
                 </div>
-                <span className="text-lg">xeylous@gmail.com</span>
+                <span className="text-base sm:text-lg break-all">xeylous@gmail.com</span>
               </a>
               
-              <div className="flex items-center gap-4 text-[var(--linear-grey)]">
-                 <div className="w-6 h-6 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+              <div className="flex items-center gap-3 sm:gap-4 text-[var(--linear-grey)]">
+                 <div className="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5">
                     <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
                   </svg>
                  </div>
-                 <span className="text-lg">Kolkata, India</span>
+                 <span className="text-base sm:text-lg">Kolkata, India</span>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <h4 className="text-sm uppercase font-bold text-white tracking-wider">Follow Me</h4>
-            <div className="flex gap-4">
+          <div className="flex flex-col gap-3 sm:gap-4">
+            <h4 className="text-xs sm:text-sm uppercase font-bold text-white tracking-wider">Follow Me</h4>
+            <div className="flex gap-3 sm:gap-4">
               <SocialIcon 
                 name="GitHub" 
                 url="https://github.com/xeylous" 
@@ -122,16 +118,16 @@ export default function Contact() {
         </div>
 
         {/* Right Card: Form */}
-        <div className="w-full bg-[rgb(22,22,26)] p-10 rounded-2xl border border-[#ffffff10] md:p-6">
-          <h3 className="text-3xl font-bold font-[family-name:var(--font-dosis)] mb-3 text-white">
+        <div className="hidden lg:block w-full bg-[rgb(22,22,26)] p-6 sm:p-8 md:p-10 rounded-2xl border border-[#ffffff10]">
+          <h3 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-dosis)] mb-2 sm:mb-3 text-white">
             Start a Conversation
           </h3>
-          <p className="text-[var(--linear-grey)] text-sm mb-8">
+          <p className="text-[var(--linear-grey)] text-xs sm:text-sm mb-6 sm:mb-8">
             Fill out the form below and I'll get back to you soon.
           </p>
           
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-1">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="flex flex-col gap-2">
                 <input
                   type="text"
@@ -140,7 +136,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Full Name"
-                  className="w-full bg-[#ffffff05] border border-[#ffffff10] p-4 rounded-lg text-white placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors"
+                  className="w-full bg-[#ffffff05] border border-[#ffffff10] p-3 sm:p-4 rounded-lg text-white text-sm sm:text-base placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors"
                 />
               </div>
 
@@ -152,7 +148,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="w-full bg-[#ffffff05] border border-[#ffffff10] p-4 rounded-lg text-white placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors"
+                  className="w-full bg-[#ffffff05] border border-[#ffffff10] p-3 sm:p-4 rounded-lg text-white text-sm sm:text-base placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors"
                 />
               </div>
             </div>
@@ -165,7 +161,7 @@ export default function Contact() {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder="Subject"
-                className="w-full bg-[#ffffff05] border border-[#ffffff10] p-4 rounded-lg text-white placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors"
+                className="w-full bg-[#ffffff05] border border-[#ffffff10] p-3 sm:p-4 rounded-lg text-white text-sm sm:text-base placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors"
               />
             </div>
 
@@ -173,30 +169,30 @@ export default function Contact() {
               <textarea
                 name="message"
                 required
-                rows="5"
+                rows="4"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Your Message..."
-                className="w-full bg-[#ffffff05] border border-[#ffffff10] p-4 rounded-lg text-white placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors resize-none"
+                className="w-full bg-[#ffffff05] border border-[#ffffff10] p-3 sm:p-4 rounded-lg text-white text-sm sm:text-base placeholder-[var(--linear-grey)] focus:outline-none focus:border-[var(--linear-grey)] transition-colors resize-none"
               />
             </div>
 
             <button
               type="submit"
               disabled={status === 'loading'}
-              className="w-full bg-[#111] text-white font-bold py-4 rounded-lg mt-2 hover:bg-black border border-[#ffffff10] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-[#111] text-white font-bold py-3 sm:py-4 rounded-lg mt-1 sm:mt-2 hover:bg-black border border-[#ffffff10] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               {status === 'loading' ? 'Sending...' : 'Send Message →'}
             </button>
 
             {status === 'success' && (
-              <p className="text-green-400 text-center font-medium animate-pulse">
+              <p className="text-green-400 text-center font-medium animate-pulse text-sm sm:text-base">
                 Message sent successfully!
               </p>
             )}
             
             {status === 'error' && (
-              <p className="text-red-400 text-center font-medium">
+              <p className="text-red-400 text-center font-medium text-sm sm:text-base">
                 Something went wrong. Please try again.
               </p>
             )}
