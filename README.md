@@ -1,10 +1,10 @@
-# Portfolio v2 | Apurv Sinha
+# Portfolio | Apurv Sinha
 
 A modern, responsive portfolio website built with Next.js 16, featuring smooth animations, a contact form, and a live GitHub contribution graph.
 
 ![Portfolio Preview](https://ik.imagekit.io/xeylous/Profile_picture_preview.png?updatedAt=1770449003179)
 
-## ✨ Features
+## Features
 
 - **Smooth Scrolling** - Lenis-powered butter-smooth scroll experience
 - **GSAP Animations** - Scroll-triggered animations for projects and experience sections
@@ -13,7 +13,7 @@ A modern, responsive portfolio website built with Next.js 16, featuring smooth a
 - **Responsive Design** - Mobile-first approach with Tailwind CSS v4
 - **SEO Optimized** - Meta tags, Open Graph, and Twitter cards configured
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js 16](https://nextjs.org/)
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
@@ -66,7 +66,7 @@ npm run build
 npm start
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -90,7 +90,7 @@ src/
     └── scroll.js        # Smooth scroll configuration
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Colors
 
@@ -104,11 +104,11 @@ Edit CSS variables in [`globals.css`](src/app/globals.css):
 }
 ```
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🔗 Links
+## Links
 
 - **Live Site:** [xeylous.xyz](https://xeylous.xyz)
 - **Blog:** [blog.xeylous.xyz](https://blog.xeylous.xyz)
