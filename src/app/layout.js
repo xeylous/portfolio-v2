@@ -41,7 +41,7 @@ export const metadata = {
       default: "Apurv | Creative Full Stack Engineer",
       template: "%s • Apurv | Creative Full Stack Engineer",
     },
-    images: [{ url: "https://ik.imagekit.io/xeylous/Gemini_Generated_Image_3vsqck3vsqck3vsq.png" }],
+    images: [{ url: "https://ik.imagekit.io/xeylous/Profile_picture_preview.png?updatedAt=1770449003179" }],
     url: "https://apurv.xyz",
   },
   twitter: {
@@ -52,13 +52,13 @@ export const metadata = {
       template: "%s • Apurv | Creative Full Stack Engineer",
     },
     description: "I enjoy creating End-to-end solutions with solid foundations, scalability, and excellent user experiences.",
-    images: ["https://ik.imagekit.io/xeylous/Gemini_Generated_Image_3vsqck3vsqck3vsq.png"],
+    images: ["https://ik.imagekit.io/xeylous/Profile_picture_preview.png?updatedAt=1770449003179"],
   },
   icons: {
     icon: "/favicon.svg",
   },
   alternates: {
-    canonical: "https://apurv.xyz",
+    canonical: "https://www.apurv.me",
   },
 };
 
