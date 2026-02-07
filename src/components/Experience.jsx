@@ -13,7 +13,7 @@ export default function Experience() {
     {
       role: "Agentic AI Research Intern",
       company: "CodeApto",
-      period: "Aug 2025 - Present",
+      period: "Aug 2025 - Jan 2026",
       description: [
         "Researching and developing agentic AI systems capable of autonomous reasoning and planning.",
         "Explored multi-agent frameworks and LLM orchestration for real-world problem-solving.",
